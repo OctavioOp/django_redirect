@@ -1,4 +1,5 @@
 from django.shortcuts import redirect, render, HttpResponse
+from django.http import JsonResponse
 
 # Create your views here.
 def root(request):
@@ -21,3 +22,9 @@ def edit(request,val):
 
 def delete(request,val):
     return HttpResponse(f'placeholder para borrar el blog {val} con un método llamado delete')
+
+def json(request):
+    return JsonResponse({
+        'name' : 'Octavio',
+        'something': 6
+    })
