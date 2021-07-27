@@ -9,7 +9,7 @@ urlpatterns = [
     path('blogs/create',views.create),
     path('blogs/<int:val>',views.show),
     path('blogs/<int:val>/edit',views.edit),
-    path('blogs/<int:val>/delete',views.delete),
+    path('blogs/delete',views.destroy),
     path('blogs/json',views.json)
 
 ]

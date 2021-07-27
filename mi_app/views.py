@@ -20,8 +20,8 @@ def show(request,val):
 def edit(request,val):
     return HttpResponse(f'placeholder para editar el blog {val} con un método llamado edit')
 
-def delete(request,val):
-    return HttpResponse(f'placeholder para borrar el blog {val} con un método llamado delete')
+def destroy(request):
+    return redirect('/')
 
 def json(request):
     return JsonResponse({
